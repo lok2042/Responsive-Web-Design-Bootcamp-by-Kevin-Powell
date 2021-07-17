@@ -1,0 +1,155 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+.container > * {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+h2 {
+    color: #404040;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+strong {
+    color: rgb(178,34,34);
+    font-weight: 900;
+}
+
+.top-text {
+    color: #f18119;
+    font-size: 0.7em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.bottom-text {
+    color: #f18119;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding-bottom: 1.5em;
+}
+
+.label-text {
+    color: #f18119;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description-text {
+    color: #404040;
+    font-size: 0.8em;
+    text-align: justify;
+    margin: 2em auto;
+}
+
+.disclaimer-text {
+    color: #000;
+    font-size: 0.5em;
+}
+
+@media (max-width: 675px) {
+    .container > * {
+        width: 80%;
+    }
+    .bottom-text {
+        padding-bottom: 1em;
+    }
+}
+
+/* Layout */
+
+.flexbox {
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 2em;
+    text-align: center;
+    min-height: 500px;
+}
+
+.container-1 {
+    background-image: url('dark-ribs.jpg');
+    background-color: teal;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-2 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 675px) {
+    .flexbox {
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+    }
+    .container-1 {
+        height: 45%;
+    }
+    .container-2 {
+        height: 55%;
+    }
+}
+
+/* Form */
+
+.form-item {
+    border-radius: 0.5em;
+    height: 3em;    
+    font-size: 0.6em;
+    outline: none;
+    text-align: center;
+    width: 100%;
+    margin: 0.5em auto;
+}
+
+.form-input {
+    border: 1px solid #404040;
+}
+
+.form-button {
+    background: linear-gradient(to left, #ff713b, #ffa51d);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.form-button:hover,
+.form-button:focus {
+    border: 3px solid yellow;
+}
+
+/* Adjust font sizes */
+@media all and (min-width: 50px)   {  body  { font-size:0.1em;  } }
+@media all and (min-width: 100px)  {  body  { font-size:0.2em;  } }
+@media all and (min-width: 200px)  {  body  { font-size:0.4em;  } }
+@media all and (min-width: 300px)  {  body  { font-size:0.6em;  } }
+@media all and (min-width: 400px)  {  body  { font-size:0.8em;  } }
+@media all and (min-width: 500px)  {  body  { font-size:1.0em;  } }
+@media all and (min-width: 675px)  {  body  { font-size:1.2em;  } }
